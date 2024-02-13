@@ -1,0 +1,13 @@
+import time
+import pyautogui
+
+while (True):
+    def sendSpamBot():
+        time.sleep(0.1)
+        
+        text = open('spamMessage.txt')
+        for each_line in text:
+            pyautogui.typewrite(each_line)
+            pyautogui.press('enter')
+        
+    sendSpamBot()
